@@ -1,0 +1,26 @@
+server:
+  port: 8033
+  tomcat:
+    uri-encoding: utf-8
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://124.71.103.26:3306/bookdb
+  main:
+    allow-circular-references: true
+  mvc:
+    static-path-pattern: /static/**
+afterImage:
+  resourceHandler: /after/**
+  location: http://47.97.67.235/www/verification/
+
+developPath1: "//resource//sky//soutExcel//"
+developPath2: "//resource//sky//soutHtml//"
+localPath1: "//src//main//resources//soutExcel//"
+localPath2: "//src//main//resources//soutHtml//"
+#  thymeleaf:
+#    prefix: /templates/
+#    suffix: .html
+#    cache: false
