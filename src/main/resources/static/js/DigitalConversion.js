@@ -1,4 +1,3 @@
-//数字转中文
 function GetCN(number) {
     let num= parseInt(number);
     if (num.toString().length===1){
